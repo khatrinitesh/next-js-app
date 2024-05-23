@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'MontserratR';
+    src: url('../assets/fonts/montserrat-regular.eot');
+    src: url('../assets/fonts/montserrat-regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/montserrat-regular.woff2') format('woff2'),
+        url('../assets/fonts/montserrat-regular.woff') format('woff'),
+        url('../assets/fonts/montserrat-regular.ttf') format('truetype'),
+        url('../assets/fonts/montserrat-regular.svg#montserrat-regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MontserratM';
+    src: url('../assets/fonts/montserrat-medium.eot');
+    src: url('../assets/fonts/montserrat-medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/montserrat-medium.woff2') format('woff2'),
+        url('../assets/fonts/montserrat-medium.woff') format('woff'),
+        url('../assets/fonts/montserrat-medium.ttf') format('truetype'),
+        url('../assets/fonts/montserrat-medium.svg#montserrat-medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MontserratSB';
+    src: url('../assets/fonts/montserrat-semibold.eot');
+    src: url('../assets/fonts/montserrat-semibold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/montserrat-semibold.woff2') format('woff2'),
+        url('../assets/fonts/montserrat-semibold.woff') format('woff'),
+        url('../assets/fonts/montserrat-semibold.ttf') format('truetype'),
+        url('../assets/fonts/montserrat-semibold.svg#montserrat-semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MontserratB';
+    src: url('../assets/fonts/montserrat-bold.eot');
+    src: url('../assets/fonts/montserrat-bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/montserrat-bold.woff2') format('woff2'),
+        url('../assets/fonts/montserrat-bold.woff') format('woff'),
+        url('../assets/fonts/montserrat-bold.ttf') format('truetype'),
+        url('../assets/fonts/montserrat-bold.svg#montserrat-bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root{
+    /* color theme */
+    --whitecolor:#ffffff;
+    --blackcolor:#fff000;
+    --primarycolor:#2c2c2c;
+    /* font size */
+    --fontBase:2vh;
+    --font8: 0.85vh;
+    --font10: 1.06vh;
+    --font12: 1.27vh;
+    --font14: 1.48vh;
+    --font16: 1.69vh;
+    --font18: 1.90vh;
+    --font20: 2.11vh;
+    --font22: 2.32vh;
+    --font24: 2.54vh;
+    --font26: 2.75vh;
+    --font28: 2.97vh;
+    --font30: 3.17vh;
+    --font32: 3.39vh;
+    --font34: 3.60vh;
+    --font36: 3.81vh;
+    --font38: 4.02vh;
+    --font40: 4.23vh;
+    --font42: 4.44vh;
+    --font44: 4.66vh;
+    --font46: 4.87vh;
+    --font48: 5.08vh;
+    --font50: 5.29vh;
+    /* font family */
+    --monsterratR:'MontserratR';
+    --monsterratM:'MontserratM';
+    --monsterratSB:'MontserratSB';
+    --monsterratB:'MontserratB';
+  }
+  
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  --w:10ch;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  letter-spacing: var(--w);
+  width: var(--w);
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
+  animation: l33 1s infinite alternate;
+}
+.loader:before {
+  content:"Loading...";
+}
+
+@keyframes l33{
+  0%,15%,75%,100% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  20% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 9px #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  25% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 7px #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  30% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 9px #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  35% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 7px #fff;
+  }
+  40% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 5px #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  45% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 7px #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  50% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 5px #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  55% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 8px #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  60% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 5px #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  65% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 7px #fff,calc(-2*var(--w)) 0 #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+  70% {
+   text-shadow: 
+        calc( 0*var(--w)) 0 #fff,calc(-1*var(--w)) 0 #fff,calc(-2*var(--w)) 0 9px #fff,calc(-3*var(--w)) 0 #fff,calc(-4*var(--w)) 0 #fff, 
+        calc(-5*var(--w)) 0 #fff,calc(-6*var(--w)) 0 #fff,calc(-7*var(--w)) 0 #fff,calc(-8*var(--w)) 0 #fff,calc(-9*var(--w)) 0 #fff;
+  }
+}
