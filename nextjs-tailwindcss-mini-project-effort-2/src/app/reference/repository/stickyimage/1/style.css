@@ -1,0 +1,12 @@
+.sticky-image-container {
+    position: sticky;
+    top: 0; /* Adjust as needed */
+    /* Add other styles for the container if necessary */
+  }
+  
+  img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    /* Add other styles for the image if necessary */
+  }
+  

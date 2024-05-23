@@ -1,0 +1,39 @@
+.image-zoom-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for the container */
+  }
+  
+  .image-zoom-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .zoom-controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .zoom-controls button {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .zoom-controls button:hover {
+    background-color: #2980b9;
+  }
+  

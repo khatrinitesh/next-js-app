@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  z-index: 999; /* adjust as needed */
+}
+
+.header ul li a{
+  color:#fff;
+  padding: 10px;
+  display: block;
+}
+
+.header ul li .active{
+  background-color: red;
+}

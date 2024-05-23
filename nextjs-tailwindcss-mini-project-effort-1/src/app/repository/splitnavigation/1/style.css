@@ -1,0 +1,17 @@
+/* SplitNavigation.module.css */
+.splitNavContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.leftNav {
+  flex: 1;
+}
+
+.rightNav {
+  display: flex;
+  gap: 20px;
+}

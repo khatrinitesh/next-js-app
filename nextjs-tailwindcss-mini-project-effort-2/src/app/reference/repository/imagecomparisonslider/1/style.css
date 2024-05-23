@@ -1,0 +1,107 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    max-width: 965px;
+}
+.container {
+    height: 73.5vw;
+    max-height: 535px;
+    max-width: 965px;
+    width: 98vw;
+    position: relative;
+    overflow: hidden;
+}
+.container figure {
+    background: url(https://via.placeholder.com/965x534) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.container figure div:first-of-type {
+    background-image: url(https://via.placeholder.com/965x534/000000/ffffff);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+    bottom: 0;
+}
+.container figure div:first-of-type::before, .container figure div:first-of-type::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    width: 4px;
+    height: calc(50% - 25px);
+    background: white;
+    z-index: 3;
+}
+.container figure div:first-of-type::before {
+    top: 0;
+}
+.container figure div:first-of-type::after {
+    bottom: 0;
+}
+.container figure div:last-of-type {
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 1;
+}
+.container figure div:last-of-type::before, .container figure div:last-of-type::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+}
+.container figure div:last-of-type::before {
+    border-right: 6px solid grey;
+    left: 50%;
+    margin-left: -17px;
+}
+.container figure div:last-of-type::after {
+    border-left: 6px solid grey;
+    right: 50%;
+    margin-right: -17px;
+}
+.container input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    width: calc(100% + 50px);
+    z-index: 2;
+}
+.container input[type=range]:focus, .container input[type=range]:active {
+    border: none;
+    outline: none;
+}
+.container input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent;
+}
+.container input[type=range]::-moz-range-track {
+    -moz-appearance: none;
+    height: 15px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    outline: none;
+}

@@ -1,0 +1,15 @@
+.outlined-button {
+    background-color: transparent;
+    color: #007bff; /* Set the desired text color */
+    border: 2px solid #007bff; /* Set the desired border color */
+    padding: 8px 16px; /* Adjust padding as needed */
+    cursor: pointer;
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+    transition:all .3s linear;
+  }
+  
+  .outlined-button:hover {
+    background-color: #007bff; /* Set the desired background color on hover */
+    color: #fff; /* Set the desired text color on hover */
+  }
+  

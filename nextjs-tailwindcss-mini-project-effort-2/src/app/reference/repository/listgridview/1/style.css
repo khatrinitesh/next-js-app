@@ -1,0 +1,22 @@
+/* style.css */
+
+.data-view {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list .data-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .otherMode .data-item {
+    background-color: #e0e0e0;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Add any additional styles as needed */
+  

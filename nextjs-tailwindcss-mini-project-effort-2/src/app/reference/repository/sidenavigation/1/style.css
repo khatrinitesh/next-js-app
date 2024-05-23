@@ -1,0 +1,140 @@
+.sidenav{
+	position: fixed;
+	left: -280px;
+	width: 280px;
+	bottom: 0px;
+	height: 100%;
+	background-color: #B5DBE6;
+	-webkit-box-shadow: inset -103px 25px 22px -96px rgba(0,0,0,0.39);
+	-moz-box-shadow: inset -103px 25px 22px -96px rgba(0,0,0,0.39);
+	box-shadow: inset -103px 25px 22px -96px rgba(0,0,0,0.39);
+	z-index: 999;
+}
+
+#nav-trigger{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: #B5DBE6;
+	font-size: 28px;
+	right: -40px;
+	top: 40px;
+	text-align: center;
+	line-height: 42px;
+	color: white;
+	cursor: pointer;
+	background: #6e858c;
+	transition-duration: 0.2s;
+}
+
+#nav-trigger:hover{
+	opacity: 0.8;
+}
+
+#nav-trigger:hover:after{
+	border-right-color: #8b9da3;
+}
+
+#nav-trigger:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(110, 133, 140, 0);
+	border-right-color: #6e858c;
+	border-width: 20px;
+	margin-top: -20px;
+	transition-duration: 0.2s;
+}
+
+.slidein{
+	-webkit-animation: slidein ease 0.5s forwards;
+	animation: slidein ease 0.5s forwards;
+}
+
+.slideout{
+	-webkit-animation: slideout ease 0.5s forwards;
+	animation: slidout ease 0.5s forwards;
+}
+
+@-webkit-keyframes slidein{
+	from{
+		left: -280px;
+	}
+	to{
+		left: 0px;
+	}
+}
+
+@keyframes slidein{
+	from{
+		left: -280px;
+	}
+	to{
+		left: 0px;
+	}
+}
+
+@-webkit-keyframes slideout{
+	from{
+		left: 0px;
+	}
+	to{
+		left: -280px;
+	}
+}
+
+@keyframes slideout{
+	from{
+		left: 0px;
+	}
+	to{
+		left: -280px;
+	}
+}
+
+#navigation{
+	padding: 40px;
+}
+
+#navigation h3{
+	margin-top: 6px;
+	margin-bottom: 37px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(110, 133, 140);
+}
+
+#navigation ul{
+	padding: 0px;
+}
+
+#navigation ul li{
+	list-style: none;
+	line-height: 30px;
+	font-size: 16px;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+#navigation ul li:hover{
+	padding-left: 15px;
+}
+
+#navigation ul li i{
+	width: 30px;
+	color: rgb(110, 133, 140);
+}
+
+main{
+	margin-left: 360px;	
+}
+
+main h2{
+	margin-top: 40px;
+}

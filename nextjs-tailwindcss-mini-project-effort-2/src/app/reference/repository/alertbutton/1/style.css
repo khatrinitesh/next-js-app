@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+body {
+  font-size: 16px;
+  background: #fafafa;
+  font-family: "Fira Sans", sans-serif;
+}
+.container {
+  width: 410px;
+  clear: both;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.alert:hover {
+  box-shadow: 0px 4px 8px rgba(46, 61, 73, 0.2);
+}
+
+.status {
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  font-size: 18px;
+}
+
+p {
+  margin: 0px;
+  margin-left: 5px;
+  font-weight: 500;
+  color: #555;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.closebtn {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  float: right;
+}
+.closebtn:hover {
+  color: #999;
+}
+
+.style-a {
+  border-left: 2px solid #FF5964;
+}
+.style-a .status {
+  color: #FF5964;
+}
+
+.style-b {
+  border-left: 2px solid #35A7FF;
+}
+.style-b .status {
+  color: #35A7FF;
+}
+
+.style-c {
+  border-left: 2px solid #64F58D;
+}
+.style-c .status {
+  color: #64F58D;
+}
+
+.style-d {
+  border-left: 2px solid #FFA544;
+}
+.style-d .status {
+  color: #FFA544;
+}D:\Nitesh\practical\reference-upskills\js-framework\next.js\nextjs-app-mini-project-effort\src\app\reference\repository\outlinebuttons\1

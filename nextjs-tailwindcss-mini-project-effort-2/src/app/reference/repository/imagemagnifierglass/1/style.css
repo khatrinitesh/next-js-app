@@ -1,0 +1,28 @@
+/* src/components/Magnifier.css */
+.magnifier-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 300px; /* Adjust to your image size */
+    height: 200px; /* Adjust to your image size */
+    overflow: hidden;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .magnifier {
+    position: absolute;
+    width: 100px; /* Adjust to your magnifier size */
+    height: 100px; /* Adjust to your magnifier size */
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-size: 300px 200px; /* Adjust to your image size */
+    pointer-events: none;
+  }
+  

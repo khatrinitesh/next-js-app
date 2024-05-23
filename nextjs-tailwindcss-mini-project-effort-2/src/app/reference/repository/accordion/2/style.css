@@ -1,0 +1,51 @@
+.user-accordion {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+  }
+  
+  .set {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+  }
+  
+  a {
+    display: block;
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+  }
+  
+  .content {
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .active {
+    border-color: #4CAF50;
+  }
+  
+  .active a {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .active .content {
+    max-height: 1000px; /* Set to a sufficiently large value */
+    transition: max-height 0.3s ease;
+  }
+  

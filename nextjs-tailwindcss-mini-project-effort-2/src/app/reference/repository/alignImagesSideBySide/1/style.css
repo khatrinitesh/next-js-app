@@ -1,0 +1,12 @@
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .grid-item {
+    width: 30%; /* Adjust the width as needed */
+    margin-bottom: 10px;
+  }
+  

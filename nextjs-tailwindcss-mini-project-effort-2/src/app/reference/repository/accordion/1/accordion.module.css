@@ -1,0 +1,32 @@
+/* styles/Accordion.module.css */
+.accordionItem {
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    transition:all .3s linear;
+  }
+  
+  .accordionHeader {
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:all .3s linear;
+  }
+  
+  .icon {
+    font-size: 18px;
+    transition: transform 0.3s ease-out;
+    transition:all .3s linear;
+  }
+  
+  .open {
+    transform: rotate(45deg);
+  }
+  
+  .accordionContent {
+    padding: 8px;
+    background-color: #f9f9f9;
+    transition:all .3s linear;
+  }
+  

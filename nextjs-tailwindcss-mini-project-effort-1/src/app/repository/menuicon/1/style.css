@@ -1,0 +1,40 @@
+/* styles.css or your component-specific style file */
+.mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .mobile-menu.open .menu-items {
+    transform: translateY(0);
+  }
+  

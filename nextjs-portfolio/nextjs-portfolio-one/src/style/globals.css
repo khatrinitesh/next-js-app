@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'PoppinsR';
+    src: url('../assets/fonts/Poppins-Regular.eot');
+    src: url('../assets/fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Poppins-Regular.woff') format('woff'),
+        url('../assets/fonts/Poppins-Regular.ttf') format('truetype'),
+        url('../assets/fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PoppinsL';
+    src: url('../assets/fonts/Poppins-Light.eot');
+    src: url('../assets/fonts/Poppins-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Poppins-Light.woff2') format('woff2'),
+        url('../assets/fonts/Poppins-Light.woff') format('woff'),
+        url('../assets/fonts/Poppins-Light.ttf') format('truetype'),
+        url('../assets/fonts/Poppins-Light.svg#Poppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PoppinsSB';
+    src: url('../assets/fonts/Poppins-SemiBold.eot');
+    src: url('../assets/fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/Poppins-SemiBold.woff') format('woff'),
+        url('../assets/fonts/Poppins-SemiBold.ttf') format('truetype'),
+        url('../assets/fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* font size */
+    --fontBase:2vh;
+    --font1: 0.11vh;
+    --font2: 0.21vh;
+    --font4: 0.42vh;
+    --font8: 0.85vh;
+    --font10: 1.06vh;
+    --font12: 1.27vh;
+    --font14: 1.48vh;
+    --font16: 1.69vh;
+    --font18: 1.90vh;
+    --font20: 2.11vh;
+    --font22: 2.32vh;
+    --font24: 2.54vh;
+    --font26: 2.75vh;
+    --font28: 2.97vh;
+    --font30: 3.17vh;
+    --font32: 3.39vh;
+    --font34: 3.60vh;
+    --font36: 3.81vh;
+    --font38: 4.02vh;
+    --font40: 4.23vh;
+    --font42: 4.44vh;
+    --font44: 4.66vh;
+    --font46: 4.87vh;
+    --font48: 5.08vh;
+    --font50: 5.29vh;
+
+    /* font family */
+    --poppiunsL:'PoppinsL';
+    --poppinsR:'PoppinsR';
+    --poppinsSB:'PoppinsSB';
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+body{
+    font-family: var(--poppinsR);
+}
+
+ul li a.active{
+    background-color: red;
+    color:#fff;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+.btnHamburger.active .line:nth-child(1){
+    transform: translateY(12px) rotate(-45deg);
+    transform-origin: 9px 0px;
+}
+.btnHamburger.active .line:nth-child(2){
+    opacity: 0;
+}
+.btnHamburger.active .line:nth-child(3){
+    transform: translateY(-12px) rotate(45deg);
+    transform-origin: 8px 2px;
+}

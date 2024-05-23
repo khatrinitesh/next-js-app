@@ -1,0 +1,66 @@
+<<<<<<< HEAD
+/* style.css */
+.accordion {
+    width: 100%;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+  }
+  
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .accordion-header.active {
+    background-color: #ddd;
+  }
+  
+  .accordion-icon {
+    margin-right: 10px;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-header.active + .accordion-content {
+    max-height: 500px; /* Set an appropriate max height for the content */
+  }
+  
+=======
+/* styles/Accordion.module.css */
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+}
+
+.accordion-title {
+  padding: 12px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.accordion-title.active {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  padding: 12px;
+}
+>>>>>>> 9186162d5538f4aacb32618d960d5df46bcb2a02

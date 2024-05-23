@@ -1,0 +1,42 @@
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.social {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+svg{
+    font-size: 50px;
+    color:#fff;
+}
+
+.social ul {
+    padding: 0px;
+    transform: translate(-270px,0);
+}
+
+.social ul li {
+    display: block;
+    margin:20px;
+    background: rgba(200, 158, 172, 0.5);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1.5s;
+}
+
+.social ul li:hover {
+    transform: translate(110px,0);
+    background: #c44a73;
+    transition: all 1.5s;
+}
+
+.social ul li:hover a {
+    color: white;
+}

@@ -1,0 +1,35 @@
+/* HoverTabs.module.css */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #f1f1f1;
+}
+
+/* HoverTabs.module.css */
+.tabContent  {
+  display: none;
+  padding: 20px;
+}
+
+.tabContent.active  {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

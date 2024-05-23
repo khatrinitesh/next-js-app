@@ -1,0 +1,22 @@
+/* styles.css */
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .image-container {
+    margin: 10px;
+    max-width: 300px; /* Set a maximum width for the image container */
+  }
+  
+  .responsive-image {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .image-caption {
+    text-align: center;
+  }
+  

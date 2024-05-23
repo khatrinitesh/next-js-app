@@ -1,0 +1,19 @@
+/* Your CSS file or inline styles */
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    /* You can adjust styling based on your layout preferences */
+  }
+  
+  .image-container {
+    border: 2px solid #000; /* Adjust the color and size of the border as needed */
+    padding: 10px; /* Optional: Add padding for space around the image */
+  }
+  
+  .bordered-image {
+    width: 100%;
+    height: auto;
+    /* You can add more styling for the image if needed */
+  }
+  

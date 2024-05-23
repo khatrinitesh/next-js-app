@@ -1,0 +1,17 @@
+.fading-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .fading-button:hover {
+    background-color: #007bff; /* Change the color as needed */
+    color: #fff;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    pointer-events: none; /* Disable button interactions when fading out */
+  }
+  

@@ -1,0 +1,9 @@
+/* RoundedImage.css */
+
+.rounded-image {
+    border-radius: 50%;
+    /* You can adjust the percentage to control the amount of rounding */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+  }
+  

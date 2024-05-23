@@ -1,0 +1,42 @@
+/* Estilos para desktop */
+.tabs {
+}
+
+.tablinks {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.tabcontent {
+  padding: 20px;
+  position: relative;
+}
+
+.tabcontent h3 {
+  margin-top: 0;
+}
+
+/* Estilos para mobile */
+@media screen and (max-width: 600px) {
+    .tablinks {
+        background-color: #777;
+        color: white;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .tabcontent {
+        padding: 0 18px;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        display: none;
+        position: initial;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+    }
+}
