@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Head from "next/head";
 import { useState,useEffect  } from "react";
 import Loading from "@/components/Loading";
+import { Html } from "next/document";
 
 
 export default function RootLayout({ children }) {
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Description for the home page." />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
       </Head>
-      <body className="min-h-screen flex flex-col font-monsterratR text-fs16">
+      <body className="h-full flex flex-col font-monsterratR text-fs16">
         <Header/>
         <div className="mainContent flex-grow bg-[#f8f8f8]">
           {loading ? <><Loading/></> : children}

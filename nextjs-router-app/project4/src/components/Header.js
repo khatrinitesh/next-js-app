@@ -1,5 +1,4 @@
 "use client"
-// router 
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,15 +6,16 @@ import Link from "next/link";
 import Logo from "../assets/images/logo.jpg";
 import LogoBrand from "../assets/images/logobrand.jpg";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import Sidebar from "./Sidebar";
 
 const Header = () => {
     const pathname = usePathname();
     const isHomePage = pathname === "/";
-    const router = useRouter(); // Initialize useRouter hook
 
   return (
-    <header>
+    <>
+    <header className="relative">
       <div className="container mx-auto">
         <div className="flex justify-between items-center"> 
           <Link href="/">
@@ -25,7 +25,10 @@ const Header = () => {
                 <Image src={LogoBrand} alt="Brand Logo" width={100} height={100} className="aspect-w-16 aspect-h-9" />
               )}
           </Link>
-          <ul className="flex bg-black">
+          <div className="block lg:hidden">
+     <Sidebar/>
+     </div>
+          <ul className="lg:flex bg-black hidden ">
             <li>
               <Link className={`text-white p-3 block ${pathname === '/' ? 'bg-[red] active' : ''}`} href="/">
                 Home
@@ -42,8 +45,8 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className={`text-white p-3 block ${pathname === '/service' ? 'bg-[red] active' : ''}`} href="/service">
-                Service
+              <Link className={`text-white p-3 block ${pathname === '/services' ? 'bg-[red] active' : ''}`} href="/services">
+                Services
               </Link>
             </li>
             <li>
@@ -55,6 +58,9 @@ const Header = () => {
         </div>
       </div>
     </header>
+    
+    </>
+    
   );
 };
 
