@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+    height: 100%;
+}
+
+.listNav li a.active{
+    background-color: red;
+}
+
+.imgFluid{
+    max-width:100%;
+    display: block;
+}
+
+/*----------------------------- social media icon */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tooltip {
+    top:-20px;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    visibility: visible;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icons li {
+    position: relative;
+  }
+  
+  .social-icons li:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+  
