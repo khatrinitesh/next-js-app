@@ -9,7 +9,7 @@ const ServicePage = () => {
   const [data,setData] = useState([]);
   const [loading,setLoading] = useState(false);
   const [error,setError]= useState('');
-  const apiUrl = process.env.NEXT_PUBLIC_APIURL
+  const apiUrl = process.env.NEXT_PUBLIC_POSTS
 
   useEffect(() => {
     const fetchData  = async () => {
