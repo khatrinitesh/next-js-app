@@ -1,9 +1,11 @@
 import React from "react";
 // components
 import Banner from '../../components/Banner';
+import MainLayout from "../layout/MainLayout";
 
 const Contact = () => {
   return (
+    <MainLayout>
     <div className="content">
       <Banner
         title="Contact"
@@ -45,6 +47,7 @@ const Contact = () => {
           className="rounded-[5px] focus:outline-none mt-5 bg-defaultgreen hover:bg-hovergreen px-4 py-2 text-white font-bold w-full">Submit</button>
       </form>
     </div>
+    </MainLayout>
   );
 };
 

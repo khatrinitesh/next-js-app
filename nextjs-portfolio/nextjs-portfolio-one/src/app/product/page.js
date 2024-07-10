@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React,{useState,useEffect} from 'react'
+import MainLayout from '../layout/MainLayout';
 
 const page = () => {
 
@@ -44,6 +45,7 @@ const page = () => {
     
   return (
     <>
+    <MainLayout>
     <div className="grid grid-cols-4 gap-4">
       {data.map(({ id, name, email, username, address, phone, website, company }) => {
         // Destructuring nested objects
@@ -70,6 +72,7 @@ const page = () => {
         );
       })}
       </div>
+      </MainLayout>
     </>
   )
 }

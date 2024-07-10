@@ -1,4 +1,4 @@
-// File: D:\Nitesh\practical\github\nextjs-app\nextjs-portfolio\nextjs-portfolio-one\src\app\product\page.js
+// File: D:\Nitesh\practical\github\next-js-app\nextjs-portfolio\nextjs-portfolio-one\src\app\product\page.js
 import * as entry from '../../../../src/app/product/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
