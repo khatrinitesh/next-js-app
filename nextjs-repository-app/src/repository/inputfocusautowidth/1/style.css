@@ -1,0 +1,10 @@
+/* AutoAdjustInput.css */
+
+.auto-adjust-input {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: width 0.2s ease-in-out;
+  }
+  

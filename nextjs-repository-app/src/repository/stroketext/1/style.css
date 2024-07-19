@@ -1,0 +1,8 @@
+.stroked-letter {
+    text-shadow: -1px -1px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+    display: inline-block;
+    color: transparent;
+  }

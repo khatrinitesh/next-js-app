@@ -1,0 +1,36 @@
+/* Nav.css */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: underline;
+}

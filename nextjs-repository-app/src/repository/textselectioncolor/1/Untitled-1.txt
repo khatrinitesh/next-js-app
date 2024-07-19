@@ -1,0 +1,17 @@
+/* TextSelectionExample.css */
+.container {
+  width: 300px;
+  margin: auto;
+}
+
+/* Customizing text selection color */
+::selection {
+  background-color: #ffcc00; /* Set your desired background color */
+  color: #333; /* Set your desired text color */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: #ffcc00;
+  color: #333;
+}

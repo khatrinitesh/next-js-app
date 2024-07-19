@@ -1,0 +1,1 @@
+export const API_ENDPOINT_JSONPLACEHOLDER_USERS = 'https://jsonplaceholder.typicode.com/users'

@@ -1,0 +1,26 @@
+/* CustomScrollbar.css */
+
+.custom-scrollbar {
+    /* Define your custom scrollbar styles */
+    height: 300px; /* Adjust height as needed */
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #4F46E5 transparent; /* Adjust colors as needed */
+  }
+  
+  /* Track */
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #4F46E5; /* Adjust handle color as needed */
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #574ce9; /* Adjust handle color on hover as needed */
+  }
+  

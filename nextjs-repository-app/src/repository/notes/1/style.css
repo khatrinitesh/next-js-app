@@ -1,0 +1,29 @@
+/* src/styles.css */
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .notes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .note {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 200px;
+  }
+  
+  button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,26 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .toggle-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .content {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  
+  .visible {
+    max-height: 200px; /* Adjust height as needed */
+  }
+  
+  .hidden {
+    max-height: 0;
+  }
+  

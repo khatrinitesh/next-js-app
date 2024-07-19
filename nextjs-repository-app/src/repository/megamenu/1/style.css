@@ -1,0 +1,36 @@
+.mega-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .sub-menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .sub-menu-item:hover {
+    background-color: #f5f5f5;
+  }
+  

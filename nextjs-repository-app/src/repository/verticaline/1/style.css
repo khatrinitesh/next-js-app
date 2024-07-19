@@ -1,0 +1,8 @@
+.verticalLine{
+    display: block;
+    vertical-align: middle;
+    width: 4px;
+    height: 20px;
+    background-color: red;
+    margin: auto;
+}

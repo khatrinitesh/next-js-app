@@ -1,0 +1,25 @@
+/* styles.css */
+.image-container {
+  position: relative;
+  width: 300px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+}
+
+.burst-image {
+  animation: burstAnimation 1s linear;
+}
+
+@keyframes burstAnimation {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}

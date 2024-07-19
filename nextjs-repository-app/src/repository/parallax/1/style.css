@@ -1,0 +1,41 @@
+/* Parallax container styles */
+.parallax-container {
+    height: 100vh; /* Set the height of the parallax container */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: auto; /* Enable vertical overflow for scrolling */
+  }
+  
+  /* Parallax layer styles */
+  .parallax-layer {
+    position: relative; /* Set position to relative */
+    width: 100%; /* Set width to 100% */
+    height: 100vh; /* Set height to 100vh to fill the screen */
+  }
+  
+  /* Content styles for each layer */
+  .layer1 {
+    background-color: #333; /* Background color for the first layer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .layer2 {
+    background-image: url('path/to/your/image.jpg'); /* Background image for the second layer */
+    background-size: cover; /* Cover the entire layer with the background image */
+    background-position: center; /* Center the background image */
+    z-index: -1; /* Set a lower z-index to make it appear behind other layers */
+  }
+  
+  .layer3 {
+    background-color: #555; /* Background color for the third layer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Custom styles for text content */
+  .text-white {
+    color: #fff; /* Set text color to white */
+  }
+  

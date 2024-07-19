@@ -1,0 +1,24 @@
+.app {
+    transition: padding-top 0.3s ease;
+    /* Smooth transition for header shrink effect */
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    transition: all 3s linear;
+}
+
+.scrolled-header.header {
+    padding: 10px;
+    /* Shrink the header */
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.content {
+    padding: 20px;
+}

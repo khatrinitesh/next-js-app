@@ -1,0 +1,4 @@
+.nav-item.active {
+    background-color: #4a5568; /* Change background color for active item */
+    color: #fff; /* Change text color for active item */
+  }

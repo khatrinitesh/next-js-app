@@ -1,0 +1,34 @@
+.sprite-container {
+    overflow: hidden;
+  }
+
+  .sprite {
+    width: 70px; /* Adjust according to sprite image width */
+    height: 70px; /* Adjust according to sprite image height */
+    background-image: url('../../../assets/iconsprite.png'); /* Specify path to your sprite image */
+    background-repeat: no-repeat;
+    transition: background-position 0.2s ease-in-out;
+  }
+  
+
+  .sprite1 {
+    background-position: -3px -4px; /* Initial position, adjust as needed */
+  }
+  .sprite1:hover {
+    background-position: -3px -81px; /* Initial position, adjust as needed */
+  }
+  
+  .sprite2 {
+    background-position: -80px -4px; /* Initial position, adjust as needed */
+  }
+  .sprite3 {
+    background-position: -156px -4px; /* Initial position, adjust as needed */
+  }
+  .sprite4 {
+    background-position: -232px -4px; /* Initial position, adjust as needed */
+  }
+  .sprite5 {
+    background-position: -309px -4px; /* Initial position, adjust as needed */
+  }
+
+  

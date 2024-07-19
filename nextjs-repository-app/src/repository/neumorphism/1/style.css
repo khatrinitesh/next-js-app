@@ -1,0 +1,31 @@
+/* NeumorphicComponent.css */
+.neumorphic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    transition: all 1s ease;
+  }
+  
+  .neumorphic-element {
+    width: 200px;
+    height: 50px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #c4c4c4, -5px -5px 15px #ffffff;
+    transition: all 1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+  
+  .neumorphic-element:hover {
+    transition: all 1s ease;
+    box-shadow: inset 5px 5px 15px #c4c4c4, inset -5px -5px 15px #ffffff;
+  }
+  

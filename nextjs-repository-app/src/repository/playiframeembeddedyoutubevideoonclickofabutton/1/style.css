@@ -1,0 +1,12 @@
+.custom-input::placeholder {
+    color: #999; /* Placeholder text color */
+  }
+  
+  /* Additional styling for the input if needed */
+  .custom-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

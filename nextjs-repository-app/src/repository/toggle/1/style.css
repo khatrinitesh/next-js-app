@@ -1,0 +1,9 @@
+.text-container {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* Adjust the duration and easing function as needed */
+}
+
+.text-container.show {
+    opacity: 1;
+}

@@ -1,0 +1,21 @@
+/* ScrollToTopButton.css */
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Blue color, you can change it */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scroll-to-top-btn:hover {
+    opacity: 0.8;
+  }
+  

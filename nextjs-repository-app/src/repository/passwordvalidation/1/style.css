@@ -1,0 +1,31 @@
+form {
+    padding: 24px;
+    background: #ffffff;
+  }
+  
+  label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  input[type=password] {
+    display: flex;
+    height: 32px;
+    margin-bottom: 8px;
+    padding: 0 8px 0 8px;
+    border: 2px solid blue;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  ul.valid-password {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    list-style: circle;
+  }
+  ul.valid-password li.valid {
+    color: green;
+    list-style: disc;
+  }

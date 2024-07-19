@@ -1,0 +1,12 @@
+.progress-container {
+    width: 300px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #4caf50;
+    width: 50%; /* Initial width */
+  }
+  

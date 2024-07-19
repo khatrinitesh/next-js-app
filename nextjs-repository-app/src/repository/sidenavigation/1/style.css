@@ -1,0 +1,42 @@
+
+
+.toggle-button {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .side-navigation {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Adjust as needed */
+    width: 250px; /* Adjust as needed */
+    height: 100%;
+    background-color: #333;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+  }
+  
+  .side-navigation.open {
+    left: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background-color: #555;
+  }
+  

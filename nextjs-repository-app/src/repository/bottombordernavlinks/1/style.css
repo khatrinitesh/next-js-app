@@ -1,0 +1,9 @@
+/* styles.css */
+.nav-link {
+    border-bottom: 2px solid transparent; /* Add a transparent bottom border */
+  }
+  
+  .nav-link:hover {
+    border-color: #4f46e5; /* Change the bottom border color on hover */
+  }
+  

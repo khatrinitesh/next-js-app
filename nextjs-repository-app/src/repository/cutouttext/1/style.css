@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
+
+body {
+  margin: 0;
+  font-family: 'Kodchasan', sans-serif;
+}
+header {
+  background-image: url('https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .2), 0 6px 20px rgba(0, 0, 0, .19);
+}
+header h1 {
+  margin: 0;
+  background-color: white;
+  font-size: 10vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+  padding: 15px;
+  outline: 5px solid;
+  outline-offset: -10px;
+  letter-spacing: 3px;
+  mix-blend-mode: screen;
+  box-shadow: inset 0 0 85px rgba(0, 0, 0, .1);
+}
+article {
+  padding: 30px;
+}
+p {
+  font-size: 17px;
+}
+article b {
+  color: crimson;
+}
+
+@media only screen and (min-width: 500px) {
+  header h1 {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  header h1 {
+    padding: 0;
+  }
+}

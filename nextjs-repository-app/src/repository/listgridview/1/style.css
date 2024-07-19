@@ -1,0 +1,34 @@
+/* ListGridView.css */
+
+.list-grid-view {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-grid-view.grid{
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+  
+  .list-grid-view.grid .item {
+    margin: 10px;
+  }
+  
+  .list-grid-view.list .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .item h3 {
+    margin-top: 0;
+  }
+  
+  .item p {
+    margin-bottom: 0;
+  }
+  

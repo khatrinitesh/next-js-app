@@ -1,0 +1,9 @@
+/* styles.css */
+.qr-code-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  

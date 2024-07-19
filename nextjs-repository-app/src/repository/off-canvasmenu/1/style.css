@@ -1,0 +1,37 @@
+.app {
+    display: flex;
+  }
+  
+  .toggle-button {
+    margin: 10px;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+  }
+  
+  .menu.open {
+    left: 0; /* Slide in when menu is open */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .content {
+    flex-grow: 1;
+  }
+  

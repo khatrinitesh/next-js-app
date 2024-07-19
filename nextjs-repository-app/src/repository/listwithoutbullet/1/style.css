@@ -1,0 +1,21 @@
+/* ListWithoutBullets.css */
+
+.list-without-bullets {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .list-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .list-item:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  

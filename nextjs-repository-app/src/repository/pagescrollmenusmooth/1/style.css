@@ -1,0 +1,37 @@
+nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+}
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  nav ul li a.active {
+    background-color: red;
+  }
+  
+  section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 100vh;
+  }
+  

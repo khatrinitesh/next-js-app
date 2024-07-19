@@ -1,0 +1,126 @@
+/* start configure */
+*, *:before, *:after, *:focus, *:active, *:focus:active {
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  /* colors */
+  /* images */
+  /* end configure */
+  .container {
+    left: 50vw;
+    position: absolute;
+    top: 50vh;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .container .icon {
+    display: inline-block;
+    filter: grayscale(100%);
+    height: 8rem;
+    position: relative;
+    transition: all 0.3s ease-out;
+    width: 8rem;
+  }
+  .container .icon:after {
+    border-radius: 50%;
+    bottom: 2rem;
+    box-shadow: 0 3.3rem 1rem 0 rgba(34, 34, 34, 0.4);
+    content: "";
+    height: 0.5rem;
+    left: 20%;
+    position: absolute;
+    width: 60%;
+  }
+  .container .icon.active {
+    -webkit-animation-name: hover;
+            animation-name: hover;
+    filter: grayscale(0%);
+  }
+  .container .icon.active:after {
+    -webkit-animation-name: hoverShadow;
+            animation-name: hoverShadow;
+  }
+  .container .icon.active, .container .icon.active:after {
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+  .container .icon.chrome {
+    background-image: url("http://icons.iconarchive.com/icons/appicns/simplified-app/256/appicns-Chrome-icon.png");
+    background-repeat: no-repeat;
+    background-size: 8rem 8rem;
+  }
+  .container .icon.safari {
+    background-image: url("http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/256/safari-icon.png");
+    background-repeat: no-repeat;
+    background-size: 8rem 8rem;
+  }
+  .container .icon.firefox {
+    background-image: url("http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Firefox-icon.png");
+    background-repeat: no-repeat;
+    background-size: 8rem 8rem;
+  }
+  .container .icon.msie {
+    background-image: url("https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/128/Internet_Explorer.png");
+    background-repeat: no-repeat;
+    background-size: 8rem 8rem;
+  }
+  
+  @-webkit-keyframes hover {
+    from {
+      top: 0;
+      transform: scaleX(1) scaleY(1);
+    }
+    to {
+      top: -1.6rem;
+      transform: scaleX(0.9) scaleY(1.05);
+    }
+  }
+  
+  @keyframes hover {
+    from {
+      top: 0;
+      transform: scaleX(1) scaleY(1);
+    }
+    to {
+      top: -1.6rem;
+      transform: scaleX(0.9) scaleY(1.05);
+    }
+  }
+  @-webkit-keyframes hoverShadow {
+    from {
+      bottom: 2rem;
+      box-shadow: 0 3.3rem 1rem 0 rgba(34, 34, 34, 0.4);
+      left: 20%;
+      width: 60%;
+    }
+    to {
+      bottom: 0.6rem;
+      box-shadow: 0 3.2rem 1rem 0 rgba(34, 34, 34, 0.2);
+      left: 25%;
+      width: 50%;
+    }
+  }
+  @keyframes hoverShadow {
+    from {
+      bottom: 2rem;
+      box-shadow: 0 3.3rem 1rem 0 rgba(34, 34, 34, 0.4);
+      left: 20%;
+      width: 60%;
+    }
+    to {
+      bottom: 0.6rem;
+      box-shadow: 0 3.2rem 1rem 0 rgba(34, 34, 34, 0.2);
+      left: 25%;
+      width: 50%;
+    }
+  }

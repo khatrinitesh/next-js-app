@@ -1,0 +1,20 @@
+.corner:before,
+.corner:after{
+    content:"";
+    position: absolute;
+    top:0;
+    width: 0;
+    height: 0;
+    border-width:10px;
+    border-style: solid;
+}
+
+.corner:before{
+    border-color:white orange orange white;
+    left: 0;
+}
+
+.corner:after{
+    right:0;
+    border-color:white white orange orange;
+}

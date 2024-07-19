@@ -1,0 +1,17 @@
+.videoWrapperClasses{
+    position: relative;
+}
+
+video::-webkit-media-controls {
+    display: none;
+  }
+
+  video{
+    pointer-events: none;
+  }
+
+  .videoClasses{
+    width: 100%;
+    height: 100%;
+  }
+  

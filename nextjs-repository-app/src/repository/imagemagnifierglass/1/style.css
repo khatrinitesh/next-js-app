@@ -1,0 +1,15 @@
+.magnifier-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .magnifier {
+    position: absolute;
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    pointer-events: none; /* So the magnifier doesn't interfere with mouse events on the underlying elements */
+  }
+  
