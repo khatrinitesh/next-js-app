@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --font-roboto: ${roboto.css()};
+}
+
+*,::before,::after{
+  font-family: var(--font-montserrat);
+}
+
+.active{
+  background-color: red;
+}
+
+.headTitle{
+  font-family: var(--font-poppins);
+}
